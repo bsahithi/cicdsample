@@ -24,44 +24,33 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.3.5</version>
 				<extensions>true</extensions>
 				
 				<configuration> 
                        <cloudHubDeployment> 
+                       <uri>https://anypoint.mulesoft.com/</uri>
+                       <muleVersion>${mule.version}</muleVersion>
+                       <username>boddulurisahi</username> 
+                       <password>Sahithi@7</password>
+                       <applicationName>cicdsample</applicationName>
+                       <environment>sandbox</environment>
+                       <workerType>Micro</workerType>
+                       <workers>1</workers>
                        <objectStoreV2>true</objectStoreV2>
-                        <muleVersion>${mule.version}</muleVersion> 
-                        <username>boddulurisahi</username> 
-                        <password>Sahithi@7</password> 
-                        <environment>sandbox</environment> 
-                        <workerType>Micro</workerType>
-                        <workers>1</workers>
-                        <uri>https://anypoint.mulesoft.com/</uri>
-                        <applicationName>cicdsample</applicationName>
-
+                         
+                        
+                        
+                        
+                       
+                        
                         
 
-                    </cloudHubDeployment> 
+                   </cloudHubDeployment> 
 
                 </configuration> 
 
-                  <executions> 
-
-                     <execution> 
-
-                         <id>deploy</id> 
-
-                         <phase>deploy</phase> 
-
-                         <goals> 
-
-                             <goal>deploy</goal> 
-
-                         </goals> 
-
-                     </execution> 
-
-                 </executions> 
+                  
 				
 			</plugin>
 		</plugins>
