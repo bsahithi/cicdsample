@@ -44,11 +44,7 @@
                         <uri>https://anypoint.mulesoft.com/</uri>
                         <applicationName>cicdsample</applicationName>
 
-                        <properties> 
-
-                           <http.port>8081</http.port>
-
-                        </properties> 
+                        
 
                     </cloudHubDeployment> 
 
