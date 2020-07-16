@@ -11,52 +11,36 @@
 	<name>cicdsample</name>
 
     <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<app.runtime>4.3.0</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
-	</properties>
-
-	<build>
-		<plugins>
-			
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.5</version>
-				<extensions>true</extensions>
-				
-				<configuration> 
-                       <cloudHubDeployment> 
-                       <uri>https://anypoint.mulesoft.com/</uri>
-                       <muleVersion>${mule.version}</muleVersion>
-                       <username>boddulurisahi</username> 
-                       <password>Sahithi@7</password>
-                       <applicationName>cicdsample</applicationName>
-                       <environment>sandbox</environment>
-                       <workerType>Micro</workerType>
-                       <workers>1</workers>
-                       <objectStoreV2>true</objectStoreV2>
-                         
-                        
-                        
-                        
-                       
-                        
-                        
-
-                   </cloudHubDeployment> 
-
-                </configuration> 
-
-                  
-				
-			</plugin>
-		</plugins>
-	</build>
-
-	<dependencies>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+ 
+        <app.runtime>4.3.0</app.runtime>
+        <mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+    </properties>
+ 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>3.3.5</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.3.0</muleVersion>
+                        <username>boddulurisahi</username>
+                        <password>Sahithi@7</password>
+                        <applicationName>cicdsample</applicationName>
+                        <environment>Sandbox</environment>
+                        <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-http-connector</artifactId>
@@ -70,8 +54,7 @@
             <classifier>mule-plugin</classifier>
         </dependency>
 	</dependencies>
-
-	<repositories>
+    <repositories>
           <repository>
             <id>anypoint-exchange-v2</id>
             <name>Anypoint Exchange</name>
@@ -95,6 +78,9 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+    <id>mule-public</id>
+    <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+  </pluginRepository>
     </pluginRepositories>
-
 </project>
