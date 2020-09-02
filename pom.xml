@@ -27,7 +27,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <cloudHubDeployment>
-                        <username>boddulurisahi</username>
+                        <username>ennveetestmule</username>
                         <password>Sahithi@7</password>
                         <muleVersion>4.3.0</muleVersion>
                         <environment>Sandbox</environment>
